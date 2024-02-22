@@ -3,6 +3,7 @@
     --white-dark-bg-color: #E3E3E3;
     --white-light-bg-color: #FBFBFB;
     --white-blue-bg-color: #EAEFF0;
+    --white-bg-header-color: #E8E5E5;
     --black-text-color: #232323;
     --black-bg-color: #292929;
     --grey-text-color: #7A7C7F;
@@ -25,6 +26,7 @@ html {
 html,
 body {
     height: 100%;
+    font-family: roboto;
 }
 
 ul {
@@ -40,14 +42,12 @@ a {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: blue;
 }
 
 .container {
     max-width: 1220px;
     margin: 0 auto;
     padding: 0 10px;
-    border: 1px solid black;
 }
 
 .main {

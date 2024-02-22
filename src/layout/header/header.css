@@ -1,0 +1,11 @@
+.header {
+    background-color: var(--white-bg-header-color);
+    border-radius: 0px 0px 36px 36px;
+}
+
+.header__inner {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

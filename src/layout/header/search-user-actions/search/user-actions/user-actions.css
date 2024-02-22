@@ -1,0 +1,10 @@
+.user__actions {
+    display: flex;
+    gap: 20px;
+}
+
+.user__actions button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
