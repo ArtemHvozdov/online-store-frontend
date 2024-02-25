@@ -12,10 +12,10 @@ function Input(props) {
 }
 
 Input.propTypes = {
-    type: PropTypes.strting,
-    placeholder: PropTypes.strting,
-    value: PropTypes.strting,
-    className: PropTypes.strting,
+    type: PropTypes.string,
+    placeholder: PropTypes.string,
+    value: PropTypes.string,
+    className: PropTypes.string,
 }
 
 export default Input;

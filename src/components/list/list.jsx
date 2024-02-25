@@ -10,7 +10,7 @@ function List(props) {
 
 List.propTypes = {
     className: PropTypes.string,
-    children: PropTypes,
+    children: PropTypes.node,
 }
 
 export default List;
