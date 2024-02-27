@@ -1,0 +1,32 @@
+.footer__glass-info {
+    padding: 50px 0px 12px 0px;
+}
+
+.footer__navbar-list {
+    display: flex;
+    justify-content: space-between;
+    color: var(--white-text-color);
+    font-size: 20px;
+}
+
+.footer__navbar-item li {
+    margin-bottom: 20px;
+}
+
+.footer__navbar-item a:hover {
+    color: var(--grey-link-hover-footer-color);
+}
+
+.social__media-list {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.copyright__section {
+    margin-top: 120px;
+    text-align: center;
+}
+.copyright__section-text {
+    color: var(--white-text-color);
+    font-size: 14px;
+}
