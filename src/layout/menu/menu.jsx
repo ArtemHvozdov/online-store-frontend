@@ -5,7 +5,7 @@ import './menu.css'
 
 function Menu() {
 
-    // const menuItems: string[] = ['About us', 'Courses', 'Events', 'Blog', 'Contacts']
+    
 
     return (
         <List className="menu__list">

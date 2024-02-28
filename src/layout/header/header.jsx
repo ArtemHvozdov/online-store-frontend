@@ -2,21 +2,36 @@ import './header.css';
 import logoImg from './../../../public/logo.svg';
 import Menu from './../menu/menu.jsx';
 import SearchUserActions from './search-user-actions/search-user-actions.jsx';
+import { useState, useEffect } from 'react';
 
 function Header() {
+    const [isFixed, setIsFixed] = useState(false)
+
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsFixed(window.scrollY > 0);
+        }
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+        };
+    }, [])
+
     return (
-        <header className="header">
+        <header className={`header ${isFixed ? 'fixed' : ''}`}>
             <div className="container">
                 <div className="header__inner">
                     <a href="#" className="logo">
-                        <img src={logoImg} alt="PulseRun" />
+                        <img className={`logo__icon ${isFixed ? 'fixed' : ''}`} src={logoImg} alt="PulseRun" />
                     </a>
 
                     <nav className="menu">
                         <Menu />
                     </nav>
 
-                    <SearchUserActions />
+                    <SearchUserActions isFixed={isFixed} />
                 </div>
             </div>
         </header>

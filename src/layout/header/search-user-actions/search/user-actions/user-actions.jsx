@@ -1,22 +1,27 @@
 import profileIcon from './../../../../../../public/icons/profile-icon.svg';
 import favoritesIcon from './../../../../../../public/icons/favorites-icon.svg';
 import cartIcon from './../../../../../../public/icons/cart-icon.svg';
-import './user-actions.css'
+import './user-actions.css';
+import PropTypes from 'prop-types';
 
-function UserActions() {
+function UserActions(props) {
     return (
         <div className="user__actions">
             <button className="user__actions-profile">
-                <img src={profileIcon} alt="" />
+                <img className={`user__actions-icon ${props.isFixed ? 'fixed' : ''}`} src={profileIcon} alt="" />
             </button>
             <button className="user__actions-favorites">
-                <img src={favoritesIcon} alt="" />
+                <img className={`user__actions-icon ${props.isFixed ? 'fixed' : ''}`} src={favoritesIcon} alt="" />
             </button>
             <button className="user__actions-cart">
-                <img src={cartIcon} alt="" />
+                <img className={`user__actions-icon ${props.isFixed ? 'fixed' : ''}`} src={cartIcon} alt="" />
             </button>
         </div>
     )
+}
+
+UserActions.propTypes = {
+    isFixed: PropTypes.bool
 }
 
 export default UserActions;
