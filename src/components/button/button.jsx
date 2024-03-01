@@ -1,13 +1,5 @@
-import PropTypes from 'prop-types'
-
 function Button(props) {
-    return <button type={props.btnType} className={props.className}>{props.btnText}</button>
-}
-
-Button.propTypes = {
-    btnType: PropTypes.string,
-    btnText: PropTypes.string,
-    className: PropTypes.string,
+    return <button type={props.btnType} style={props.style} className={props.className}>{props.btnText || props.children}</button>
 }
 
 export default Button;

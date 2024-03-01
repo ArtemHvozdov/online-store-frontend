@@ -1,7 +1,6 @@
 import './search-user-actions.css';
 import Search from './search/search';
 import UserActions from './search/user-actions/user-actions';
-import PropTypes from 'prop-types';
 
 function SearchUserActions(props) {
     const styles = {
@@ -15,10 +14,6 @@ function SearchUserActions(props) {
             <UserActions isFixed={props.isFixed} />
         </div>
     )
-}
-
-SearchUserActions.propTypes = {
-    isFixed: PropTypes.bool
 }
 
 export default SearchUserActions;

@@ -2,7 +2,6 @@ import profileIcon from './../../../../../../public/icons/profile-icon.svg';
 import favoritesIcon from './../../../../../../public/icons/favorites-icon.svg';
 import cartIcon from './../../../../../../public/icons/cart-icon.svg';
 import './user-actions.css';
-import PropTypes from 'prop-types';
 
 function UserActions(props) {
     return (
@@ -18,10 +17,6 @@ function UserActions(props) {
             </button>
         </div>
     )
-}
-
-UserActions.propTypes = {
-    isFixed: PropTypes.bool
 }
 
 export default UserActions;

@@ -1,8 +1,6 @@
 import Input from "../../../../components/input/input";
 import searchIcon from "./../../../../../public/icons/search-icon.svg"
 import './search.css';
-import PropTypes from 'prop-types';
-
 
 function Search(props) {
     return (
@@ -18,10 +16,6 @@ function Search(props) {
             </button>
         </div>
     )
-}
-
-Search.propTypes = {
-    isFixed: PropTypes.bool
 }
 
 export default Search

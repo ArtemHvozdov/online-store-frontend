@@ -1,5 +1,3 @@
-import PropTypes from 'prop-types';
-
 function Input(props) {
     return (
         <input 
@@ -9,13 +7,6 @@ function Input(props) {
             className={props.className}    
         />
     )
-}
-
-Input.propTypes = {
-    type: PropTypes.string,
-    placeholder: PropTypes.string,
-    value: PropTypes.string,
-    className: PropTypes.string,
 }
 
 export default Input;
