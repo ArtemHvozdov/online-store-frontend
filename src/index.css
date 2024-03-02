@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Strong';
+    src: url('../fonts/Strong-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 :root {
     --white-text-color: #E9E9E9;
     --white-dark-bg-color: #E3E3E3;
@@ -14,6 +21,8 @@
     --blue-bg-color: #495C80;
     --red-color: #ED2424;
     --yellow-color: #F5ED1D;
+
+    --tittle-font: 'Strong', sans-serif;
 }
 
 html {

@@ -4,7 +4,8 @@ function FooterTittleMain() {
     const styles = {
         fontSize: "36px",
         lineHeight: "140%",
-        color: "var(--white-text-color)"
+        color: "var(--white-text-color)",
+        fontFamily: "var(--tittle-font)"
     }
 
     return (

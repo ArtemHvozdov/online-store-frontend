@@ -15,7 +15,6 @@ function Main() {
                     fullPrice="3 299" 
                     salePrice="2 000"
                 />
-                {/* <Carousel /> */}
             </div>
         </main>
     )
