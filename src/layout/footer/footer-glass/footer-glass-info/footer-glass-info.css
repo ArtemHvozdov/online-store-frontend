@@ -22,6 +22,12 @@
     align-items: center;
     gap: 20px;
 }
+
+.social__media-list a:hover {
+    filter: invert(0%) sepia(50%) saturate(7494%) hue-rotate(200deg) brightness(127%) contrast(99%);
+    cursor: pointer;
+}
+
 .copyright__section {
     margin-top: 120px;
     text-align: center;
