@@ -3,6 +3,12 @@ import {useState, useEffect, Children, cloneElement} from "react";
 
 const Carousel = ({children}) => {
 
+    const styles = {
+        arrowL: {
+            transform: "rotate(180deg)"
+        }
+    }
+
     const [pages, setPages] = useState([])
    const [offset, setOffset] = useState(0)
 
@@ -25,9 +31,9 @@ const Carousel = ({children}) => {
        Children.map(children, (child) => {
          return cloneElement(child, {
            style: {
-             minWidth: "100%",
-             maxWidth: "100%",
-             height: "100%"
+             minWidth: "20%",
+             maxWidth: "20%",
+             height: "12%"
            }
          })
        })
@@ -38,7 +44,7 @@ const Carousel = ({children}) => {
 
   return (
     <div className='main_container'>
-        <img className='arrow' src='public/icons/White Circular Buttons.png' onClick={handleLeftArrowClick}/>
+        <img style={styles.arrowL} className='arrow' src='public/icons/arrow-right.svg' onClick={handleLeftArrowClick}/>
              <div className='window'>
         <div className='all_pages_container' style={{
         transform: `translateX(${offset}px)`,
@@ -47,7 +53,7 @@ const Carousel = ({children}) => {
     </div>
 
     </div>
-    <img src='public/icons/White Circular Buttonsright.png' className='arrow_r' onClick={handleRightArrowClick}/>
+        <img src='public/icons/arrow-right.svg' className='arrow_r' onClick={handleRightArrowClick}/>
     </div>
     )
     }
