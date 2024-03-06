@@ -1,0 +1,23 @@
+.product-photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+
+.top-photos,
+.bottom-photos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32px;
+}
+
+.top-photos {
+  margin-top: 0;
+}
+
+.top-photos img:not(:last-of-type),
+.bottom-photos img:not(:last-of-type) {
+  margin-right: 32px;
+}
